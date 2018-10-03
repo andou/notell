@@ -1,3 +1,21 @@
+### Basic Usage
+
+Start the server and ngrok
+```bash
+npm run start
+npm run startngrok
+```
+
+Go to [localhost at port 8013](http://localhost:8013)
+
+Go [ngrok](https://ngrok.com/)
+
+Stop the stuff
+```bash
+npm run stop
+npm run stopngrok
+```
+
 ### Overview
 
 A presentation server based on [Reveal.js][1] and [Socket.IO][2].

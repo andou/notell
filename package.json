@@ -5,9 +5,10 @@
   "scripts": {
     "install": "coffee kit/app_mgr.coffee -- setup",
     "test": "coffee kit/app_mgr.coffee -- test",
-    "start": "coffee kit/app_mgr.coffee -- start",
+    "start": "coffee kit/app_mgr.coffee -- start &> /dev/null &",
     "stop": "coffee kit/app_mgr.coffee -- stop",
-    "ngrok": "ngrok http 8013"
+    "startngrok": "ngrok http 8013 &> /dev/null &",
+    "stopngrok": "kill -9 $(ps -A -o pid,comm | grep ngrok | awk {'print$1'})"
   },
   "dependencies": {
     "bower": "1.3.12",
