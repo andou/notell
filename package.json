@@ -6,7 +6,8 @@
     "install": "coffee kit/app_mgr.coffee -- setup",
     "test": "coffee kit/app_mgr.coffee -- test",
     "start": "coffee kit/app_mgr.coffee -- start",
-    "stop": "coffee kit/app_mgr.coffee -- stop"
+    "stop": "coffee kit/app_mgr.coffee -- stop",
+    "ngrok": "ngrok http 8013"
   },
   "dependencies": {
     "bower": "1.3.12",
